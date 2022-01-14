@@ -27,7 +27,7 @@ def products(request, id_category=None, page=1):
     else:
         products = Product.objects.all()
 
-    paginator = Paginator(products,per_page=3)
+    paginator = Paginator(products, per_page=3)
 
     try:
         products_paginator = paginator.page(page)
