@@ -224,7 +224,7 @@ CACHE_MIDDLEWARE_KEY_PREFIX = 'geekbrains'
 CACHES = {
     'default':{
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '134.0.115.226:11211'
+        'LOCATION': '194.67.105.23:11211'
     }
 }
 
