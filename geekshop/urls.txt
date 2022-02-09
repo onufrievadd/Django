@@ -1,0 +1,13 @@
+http://194.67.105.23
+http://194.67.105.23/users/login/
+http://194.67.105.23/products/
+http://194.67.105.23/users/profile/
+http://194.67.105.23/orders/
+http://194.67.105.23/admins/
+http://194.67.105.23/admins/users/
+http://194.67.105.23/admins/users-update/1
+http://194.67.105.23/admins/product-categories/
+http://194.67.105.23/admins/product-categories-update/1
+http://194.67.105.23/admins/products/
+http://194.67.105.23/admins/products-update/1
+http://194.67.105.23/users/logout/

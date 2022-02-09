@@ -1,0 +1,88 @@
+(env) root@194-67-105-23:/home/django/Django/geekshop# siege -f url.txt -d0 -r25 -c50
+** SIEGE 4.0.4
+** Preparing 50 concurrent users for battle.
+The server is now under siege...
+Transactions:                   9550 hits
+Availability:                 100.00 %
+Elapsed time:                 118.37 secs
+Data transferred:            1196.94 MB
+Response time:                  0.61 secs
+Transaction rate:              80.68 trans/sec
+Throughput:                    10.11 MB/sec
+Concurrency:                   49.25
+Successful transactions:        9000
+Failed transactions:               0
+Longest transaction:            7.65
+Shortest transaction:           0.00
+
+(env) root@194-67-105-23:/home/django/Django/geekshop# siege -f url.txt -d0 -r50 -c50
+** SIEGE 4.0.4
+** Preparing 50 concurrent users for battle.
+The server is now under siege...
+Transactions:                  17000 hits
+Availability:                 100.00 %
+Elapsed time:                 224.83 secs
+Data transferred:            2058.90 MB
+Response time:                  0.65 secs
+Transaction rate:              75.61 trans/sec
+Throughput:                     9.16 MB/sec
+Concurrency:                   49.38
+Successful transactions:       15750
+Failed transactions:               0
+Longest transaction:            7.24
+Shortest transaction:           0.00
+
+(env) root@194-67-105-23:/home/django/Django/geekshop# siege -f url.txt -d0 -r25 -c100
+** SIEGE 4.0.4
+** Preparing 100 concurrent users for battle.
+The server is now under siege...
+Transactions:                  19100 hits
+Availability:                 100.00 %
+Elapsed time:                 234.88 secs
+Data transferred:            2393.89 MB
+Response time:                  1.21 secs
+Transaction rate:              81.32 trans/sec
+Throughput:                    10.19 MB/sec
+Concurrency:                   98.53
+Successful transactions:       18000
+Failed transactions:               0
+Longest transaction:           15.07
+Shortest transaction:           0.00
+
+(env) root@194-67-105-23:/home/django/Django/geekshop# siege -f url.txt -d0 -r17 -c150
+** SIEGE 4.0.4
+** Preparing 150 concurrent users for battle.
+The server is now under siege...
+Transactions:                  18750 hits
+Availability:                 100.00 %
+Elapsed time:                 240.66 secs
+Data transferred:            2361.17 MB
+Response time:                  1.88 secs
+Transaction rate:              77.91 trans/sec
+Throughput:                     9.81 MB/sec
+Concurrency:                  146.56
+Successful transactions:       17550
+Failed transactions:               0
+Longest transaction:           22.92
+Shortest transaction:           0.00
+
+(env) root@194-67-105-23:/home/django/Django/geekshop# siege -f url.txt -d0 -r12 -c200
+** SIEGE 4.0.4
+** Preparing 200 concurrent users for battle.
+The server is now under siege...
+Transactions:                  19600 hits
+Availability:                 100.00 %
+Elapsed time:                 223.58 secs
+Data transferred:            2968.01 MB
+Response time:                  2.13 secs
+Transaction rate:              87.66 trans/sec
+Throughput:                    13.27 MB/sec
+Concurrency:                  186.52
+Successful transactions:       18600
+Failed transactions:               0
+Longest transaction:           30.45
+Shortest transaction:           0.00
+
+Продолжать тест тальше не вижу смысла, ресурс отвечает без отказов
+а ответ результата нагрузки уже очень долгий, нагрузку на 255 пользователей
+не хватило сил дождаться
